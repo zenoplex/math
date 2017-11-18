@@ -45,31 +45,4 @@ describe('math', () => {
       expect(math.map(0, 100, 0, 1, true)(-1000)).toEqual(0);
     });
   });
-
-  describe('toDegrees', () => {
-    it('convert radians to degrees', () => {
-      expect(math.toDegrees(0)).toEqual(0);
-      expect(math.toDegrees(math.toRadians(90))).toEqual(90);
-      expect(math.toDegrees(math.toRadians(180))).toEqual(180);
-      expect(math.toDegrees(math.toRadians(270))).toEqual(270);
-      expect(math.toDegrees(math.toRadians(360))).toEqual(360);
-      expect(math.toDegrees(math.toRadians(-90))).toEqual(-90);
-      expect(math.toDegrees(math.toRadians(-180))).toEqual(-180);
-      expect(math.toDegrees(math.toRadians(-270))).toEqual(-270);
-      expect(math.toDegrees(math.toRadians(-360))).toEqual(-360);
-    });
-  });
-
-  describe('toRadians', () => {
-    it('convert degrees to radians', () => {
-      expect(math.toRadians(math.toDegrees(90))).toEqual(90);
-      expect(math.toRadians(math.toDegrees(180))).toEqual(180);
-      expect(math.toRadians(math.toDegrees(270))).toEqual(270);
-      expect(math.toRadians(math.toDegrees(360))).toEqual(360);
-      expect(math.toRadians(math.toDegrees(-90))).toEqual(-90);
-      expect(math.toRadians(math.toDegrees(-180))).toEqual(-180);
-      expect(math.toRadians(math.toDegrees(-270))).toEqual(-270);
-      expect(math.toRadians(math.toDegrees(-360))).toEqual(-360);
-    });
-  });
 });

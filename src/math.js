@@ -1,6 +1,4 @@
 // @flow
-export const PI2 = Math.PI * 2;
-
 type Constrain = (number, number) => number => number;
 export const constrain: Constrain = (min, max) => n =>
   Math.max(Math.min(n, max), min);
@@ -21,9 +19,3 @@ export const map: Map = (
     ? constrain(minOutput, maxOutput)(v)
     : constrain(maxOutput, minOutput)(v);
 };
-
-type ToRadians = number => number;
-export const toRadians: ToRadians = angle => angle * (180 / Math.PI);
-
-type ToDegrees = number => number;
-export const toDegrees: ToDegrees = angle => angle * (Math.PI / 180);
