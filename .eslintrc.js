@@ -11,6 +11,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'no-plusplus': 0,
     'no-param-reassign': 0,
+    'no-bitwise': 0,
     'max-len': 0,
-  }
+  },
 };
