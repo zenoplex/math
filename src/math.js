@@ -1,4 +1,6 @@
 // @flow
+export const PI2 = Math.PI * 2;
+
 type Constrain = (number, number) => number => number;
 export const constrain: Constrain = (min, max) => n =>
   Math.max(Math.min(n, max), min);
