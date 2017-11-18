@@ -24,4 +24,4 @@ type ToRadians = number => number;
 export const toRadians: ToRadians = angle => angle * (180 / Math.PI);
 
 type ToDegrees = number => number;
-export const toDegree: ToDegrees = angle => angle * (Math.PI / 180);
+export const toDegrees: ToDegrees = angle => angle * (Math.PI / 180);
