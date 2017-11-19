@@ -35,6 +35,8 @@
     "dev": "rollup -c -w --verbose",
     "test": "npm run lint && npm run typecheck && jest",
     "test:watch": "jest --watch",
-    "postinstall": "rm -r flow-typed/npm & flow-typed install"
-  }
+    "postinstall": "rm -r flow-typed/npm & flow-typed install",
+    "prepare": "npm run build"
+  },
+  "files": ["dist"]
 }
