@@ -1,11 +1,14 @@
 // @flow
 export const TWO_PI = Math.PI * 2;
 
+const PIOverDegrees = Math.PI / 180;
+const DegreesOverPI = 180 / Math.PI;
+
 type ToRadians = number => number;
-export const toRadians: ToRadians = angle => angle * (Math.PI / 180);
+export const toRadians: ToRadians = angle => angle * PIOverDegrees;
 
 type ToDegrees = number => number;
-export const toDegrees: ToDegrees = angle => angle * (180 / Math.PI);
+export const toDegrees: ToDegrees = angle => angle * DegreesOverPI;
 
 const length = 360;
 const ratio = length / TWO_PI;
