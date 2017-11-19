@@ -12,7 +12,7 @@ export const toDegrees: ToDegrees = angle => angle * DegreesOverPI;
 
 const length = 360;
 const ratio = length / TWO_PI;
-const cosines = new Array(length);
+const cosines = new Float32Array(length);
 const sines = new Float32Array(length);
 
 for (let i = 0; i < length; i++) {
