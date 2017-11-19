@@ -33,6 +33,7 @@
     "typecheck": "flow check",
     "build": "NODE_ENV=production rollup -c",
     "dev": "rollup -c -w --verbose",
+    "pretest": "rm -r flow-typed/npm & flow-typed install",
     "test": "npm run lint && npm run typecheck && jest",
     "test:watch": "jest --watch",
     "prepare": "npm run build"
