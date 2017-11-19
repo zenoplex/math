@@ -1,3 +1,3 @@
 // @flow
-export * from './math';
+export * from './calc';
 export * from './angles';

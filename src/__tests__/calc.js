@@ -1,5 +1,5 @@
 // @flow
-import * as math from '../math';
+import * as math from '../calc';
 
 describe('math', () => {
   describe('constrain', () => {
