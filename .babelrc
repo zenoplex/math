@@ -1,11 +1,11 @@
 {
   "presets": [["env", { "modules": false }], "flow"],
-  "plugins": ["transform-runtime", "external-helpers"],
   "env": {
     "test": {
       "presets": ["env", "flow"]
     },
     "production": {
+      "plugins": ["external-helpers"],
       "comments": false,
       "minified": true
     }
