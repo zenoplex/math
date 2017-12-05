@@ -1,6 +1,6 @@
 {
   "name": "@gen/math",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "general purpose math utility for drawing",
   "main": "dist/math.cjs.js",
   "module": "dist/math.esm.js",
