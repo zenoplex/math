@@ -25,12 +25,12 @@ type Cos = number => number;
 export const cos: Cos = (radians) => {
   radians %= TWO_PI;
   if (radians < 0) radians += TWO_PI;
-  return cosines[Math.fround(radians * ratio) | 0];
+  return cosines[(radians * ratio) | 0];
 };
 
 type Sin = number => number;
 export const sin: Sin = (radians) => {
   radians %= TWO_PI;
   if (radians < 0) radians += TWO_PI;
-  return sines[Math.fround(radians * ratio) | 0];
+  return sines[(radians * ratio) | 0];
 };

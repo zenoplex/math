@@ -33,7 +33,7 @@ describe('angles', () => {
     it('should approximately equal native cosine', () => {
       for (let i = 0; i < 360; i += 1) {
         const rad = angles.toRadians(i);
-        expect(angles.cos(rad)).toBeCloseTo(Math.cos(rad));
+        expect(angles.cos(rad)).toBeCloseTo(Math.cos(rad), 1);
       }
     });
   });
@@ -42,7 +42,7 @@ describe('angles', () => {
     it('should approximately equal native sine', () => {
       for (let i = 0; i < 360; i += 1) {
         const rad = angles.toRadians(i);
-        expect(angles.sin(rad)).toBeCloseTo(Math.sin(rad));
+        expect(angles.sin(rad)).toBeCloseTo(Math.sin(rad), 1);
       }
     });
   });
